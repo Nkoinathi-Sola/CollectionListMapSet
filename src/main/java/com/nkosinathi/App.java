@@ -79,13 +79,13 @@ public class App {
         // Similar to List and Set you can also create read only or unmodifiable Map in Java
         // add , remove and override is not allowed on read only Map in Java
 
-        Map<String, String> contries = new HashMap<String, String>();
-        contries.put("India", "New Delhi");
+        Map<String, String> countries = new HashMap<String, String>();
+        countries.put("India", "New Delhi");
 
         //Map is not read only yet, you can still add entries into
-        contries.put("UK", "London");
+        countries.put("UK", "London");
 
-        System.out.println("Map in Java before making read only: " + contries);
+        System.out.println("Map in Java before making read only: " + countries);
 
         //Making Map read only in Java
         //Map readOnlyMap = Collections.unmodifiableMap(contries);//COMMENT/UNCOMMENT - TOGGLE THIS CODE
@@ -95,6 +95,8 @@ public class App {
 
         //you can not remove keys from read only Map in Java
         //readOnlyMap.remove("UK"); //java.lang.UnSupportedOperation
+
+
 
     }
 
